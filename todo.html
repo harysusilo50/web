@@ -117,7 +117,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalTambahBuku">Buat Aktivitas</h5>
+            <h5 class="modal-title" id="modalTambahBuku">
+              Buat Aktivitas Latihan
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -128,9 +130,7 @@
           <div class="modal-body">
             <form onsubmit="submitData()">
               <div class="mb-3">
-                <label for="judulBuku" class="col-form-label"
-                  >Nama Aktivitas</label
-                >
+                <label for="judulBuku" class="col-form-label">Materi</label>
                 <input
                   type="text"
                   class="form-control"
@@ -165,14 +165,12 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label for="penulisBuku" class="col-form-label"
-                  >Target Aktivitas</label
-                >
+                <label for="penulisBuku" class="col-form-label">Pelatih</label>
                 <input
                   type="text"
                   class="form-control"
                   id="penulisBuku"
-                  placeholder="Untuk siapa kamu ngelakuin kebaikan ini?"
+                  placeholder="Bersama siapa kamu ngelakuin latihan ini?"
                   required
                 />
               </div>
@@ -190,8 +188,7 @@
               </div>
               <div class="mb-3">
                 <label for="deskripsiBuku" class="col-form-label"
-                  >Yuk deskripsiin aktivitas kebaikan yang mau kamu
-                  lakuin</label
+                  >Yuk deskripsiin aktivitas latihan yang mau kamu lakuin</label
                 >
                 <textarea
                   class="form-control"

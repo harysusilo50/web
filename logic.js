@@ -9,10 +9,10 @@ let btnSearch = document.getElementById("btn_search");
 function template(id, judul, penulis, tahun, deskripsi, keterangan) {
     let isComplete, button;
     if (keterangan == true) {
-        isComplete = `<span class="badge bg-secondary mb-4 fw-normal">Yeay! Kamu telah melakukan kebaikan ini!</span>`;
+        isComplete = `<span class="badge bg-secondary mb-4 fw-normal">Yeay! Kamu telah melakukan Latihan ini!</span>`;
         button = `<button class="btn btn-warning text-white" onclick="updateData(${id})">Ganti <i class="bi bi-dash-circle"></i></button>`
     } else {
-        isComplete = `<span class="badge bg-warning mb-4 fw-normal">Ayo segera selesaikan kebaikan kamu yang ini!</span>`;
+        isComplete = `<span class="badge bg-warning mb-4 fw-normal">Ayo segera selesaikan Latihanmu!</span>`;
         button = `<button class="btn btn-success" onclick="updateData(${id})">Selesai <i class="bi bi-plus-circle"></i></button>`;
     }
 
@@ -25,7 +25,7 @@ function template(id, judul, penulis, tahun, deskripsi, keterangan) {
                             ${isComplete}
                             <div class="d-flex row-cols-2">
                                 <div class="col-md-4">
-                                    <p>Target</p>
+                                    <p>Pelatih</p>
                                     <p>Waktu (dalam menit)</p>
                                     <p>Deskripsi</p>
                                 </div>
